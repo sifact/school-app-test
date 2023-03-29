@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+$primary-color: #0d0d0d;
+$secondary-color-one: #3377ff;
+$secondary-color-two: #3377ff80;
+$background-primary-color: #f5f5f5;
+$background-secondary-color: #09090f;
+
+$success-color: #00c853;
+$error-color: #ff6666;
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+.nav_box {
+    position: fixed;
+    bottom: 20px;
+    z-index: 1000;
+    width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    box-shadow: 0 35px 80px 0 rgba(0, 0, 0, 0.2);
+    background: "#FFFFFF";
+}
+
+.nav {
+    width: 100%;
+    background: "#FFFFFF";
+    border-radius: 30px;
+}
+
+// react phone library customization
+.PhoneInput {
+    opacity: 1 !important;
+    display: flex !important;
+    align-items: end !important;
+}
+
+.PhoneInputCountry {
+    background: #3377ff;
+    padding: 0.8rem;
+    border-radius: 12px;
+}
+
+.PhoneInputCountryIcon--border {
+    box-shadow: none !important;
+}
+.PhoneInputInput {
+    margin-left: 1rem;
+
+    border: none !important;
+
+    outline: none !important;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #989db3 !important;
+    min-width: 170px !important;
+    flex: 0 !important;
+}
+.PhoneInputCountrySelectArrow {
+    margin-left: 14px !important;
+    box-shadow: none;
+}
+
+.PhoneInputCountrySelectArrow {
+    color: #ffffff;
+    opacity: 1 !important;
+    width: 8px !important;
+    height: 8px !important;
+}
+
+@media only screen and (max-width: 720px) {
+    .nav_box {
+        width: 90%;
+    }
+}
